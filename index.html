@@ -1,12 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Start by writing out the HTML elements for the sidebar, header and main-content containers.
+In your CSS file, apply Grid properties until you have this basic layout built. -->
+
+  <body>
+    <div class="sidebar">
+      <div class="tab title">
+        <img src="icons/view-dashboard.svg" width="30" height="30" />
+        Dashboard
+      </div>
+      <div class="top-tabs">
+        <div class="tab">
+          <img src="icons/home.svg" width="20" height="20" />
+
+          <span>Home</span>
+        </div>
+        <div class="tab">
+          <img src="icons/account.svg" width="20" height="20" />
+
+          <span>Profile</span>
+        </div>
+        <div class="tab">
+          <img src="icons/message.svg" width="20" height="20" />
+
+          <span>Messages</span>
+        </div>
+        <div class="tab">
+          <img src="icons/history.svg" width="20" height="20" />
+
+          <span>History</span>
+        </div>
+        <div class="tab">
+          <img src="icons/tasks.svg" width="20" height="20" />
+          <span>Tasks</span>
+        </div>
+        <div class="tab">
+          <img src="icons/communities.svg" width="20" height="20" />
+
+          <span>Communities</span>
+        </div>
+      </div>
+      <div class="bottom-tabs">
+        <div class="tab">
+          <img src="icons/settings.svg" width="20" height="20" />
+          <span> Settings </span>
+        </div>
+        <div class="tab">
+          <img src="icons/support.svg" width="20" height="20" />
+
+          <span>Support</span>
+        </div>
+        <div class="tab">
+          <img src="icons/privacy.svg" width="20" height="20" />
+
+          <span>Privacy</span>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="navbar">
+        <div class="search-container">
+          <!-- Magnifying Glass Icon -->
+          <img src="icons/search.svg" height="20px" width="20px" />
+          <input type="text" />
+        </div>
+        <div class="topright">
+          <img src="icons/notifications.svg" height="20px" width="20px" />
+          <img
+            src="images/profile-pic.png"
+            class="profile-pic"
+            height="30px"
+            width="30px"
+          />
+          <h4>Harry PSD</h4>
+        </div>
+      </div>
+      <div class="heading">
+        <div class="left">
+          <div class="photo"></div>
+          <div class="hi-there">
+            <h4>Hi there,</h4>
+            <div class="name">Morgan Oakley (@morgan)</div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="button">New</div>
+          <div class="button">Upload</div>
+          <div class="button">Share</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h3>Your Projects</h3>
+      <div class="projects"></div>
+      <div class="announcements-section">
+        <h3>Announcements</h3>
+        <div class="announcements">
+          <div class="announcement-item">
+            <h3>Site Maintenance</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate laborum laboriosam vel dolor natus quaerat blanditiis
+              odio possimus adipisci excepturi porro, ratione quidem reiciendis
+              nobis commodi itaque distinctio aliquid quis?
+            </p>
+          </div>
+          <div class="announcement-item">
+            <h3>Site Maintenance</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate laborum laboriosam vel dolor natus quaerat blanditiis
+              odio possimus adipisci excepturi porro, ratione quidem reiciendis
+              nobis commodi itaque distinctio aliquid quis?
+            </p>
+          </div>
+          <div class="announcement-item">
+            <h3>Site Maintenance</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate laborum laboriosam vel dolor natus quaerat blanditiis
+              odio possimus adipisci excepturi porro, ratione quidem reiciendis
+              nobis commodi itaque distinctio aliquid quis?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trending-section">
+        <h3>Trending</h3>
+        <div class="trending">
+          <div class="trending-item">
+            <h4>@tegan</h4>
+            <p>World Peace Builder</p>
+          </div>
+          <div class="trending-item">
+            <h4>@tegan</h4>
+            <p>World Peace Builder</p>
+          </div>
+          <div class="trending-item">
+            <h4>@tegan</h4>
+            <p>World Peace Builder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
