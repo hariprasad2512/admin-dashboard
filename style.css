@@ -81,3 +81,127 @@ body {
 .main-content{
     background-color: whitesmoke;
 }
+
+
+.heading {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.heading .left{
+    display: flex;
+}
+.heading .left .photo img{
+    border-radius: 50%;
+}
+
+.heading .right {
+    display: flex;
+    gap: 20px;
+}
+
+.heading .right .btn {
+    padding: 10px;
+    color: white;
+    background-color: rgb(0, 174, 255);
+    border-radius: 20px;
+    height: 40px;
+    box-shadow: dodgerblue;
+}
+
+.heading .left .hi-there .name {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1.5rem 1rem;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2/3;
+    padding: 1rem 0rem;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%);
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-left: 10px solid #feba03;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 30px;
+    font-size: smaller;
+}
+.project-item .bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.main-content .right {
+    padding: 1rem;
+}
+
+.announcements-section {
+    display: grid;
+    gap: 10px;
+}
+
+.announcement-item {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.announcement-item h3 {
+    font-size: 15px;
+}
+
+.announcement-item p{
+    font-size: 12px;
+    width: 250px;         
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.announcement-item p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Cuts off text and adds ellipsis after 3 lines */
+  overflow: hidden;      /* Required to hide the remaining text */
+}
+
+
+.trending-section {
+    display: grid;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.trending {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 20%);
+    padding: 2rem;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+}
+
+
+.trending-item{
+    display: flex;
+    gap: 20px;
+}
+
+.trending-item img {
+    border-radius: 50%;
+}
